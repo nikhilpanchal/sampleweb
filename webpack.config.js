@@ -7,6 +7,12 @@ const HtmlWebpackPluginConfig = new HtmlWebPackPlugin({
     inject: 'body'
 });
 
+const HtmlWebpackPluginConfig_positioning = new HtmlWebPackPlugin({
+    template: './src/positioning.html',
+    filename: 'positioning.html',
+    inject: 'body'
+});
+
 module.exports = {
     entry: [
         './src/js/start.js',
@@ -36,6 +42,7 @@ module.exports = {
         ]
     },
     plugins: [
-        HtmlWebpackPluginConfig
+        HtmlWebpackPluginConfig,
+        HtmlWebpackPluginConfig_positioning
     ]
 };

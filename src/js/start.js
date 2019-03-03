@@ -7,4 +7,5 @@ function changeGreeting() {
     elementsByTagName[0].textContent = greeting;
 };
 
-document.getElementById("greetButton").addEventListener("click", changeGreeting);
+// document.getElementById("greetButton")
+//     .addEventListener("click", changeGreeting);
